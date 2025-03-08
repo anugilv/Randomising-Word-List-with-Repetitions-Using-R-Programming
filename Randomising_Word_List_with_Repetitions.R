@@ -18,16 +18,13 @@ word_list <- rep(words, each = repetitions)
 # Shuffle the list randomly
 shuffled_words <- sample(word_list, length(word_list))
 
-# Define the directory path where you want to save the file.
-# Use double backslashes or single forward slashes. 
-
+# Define the directory path where you want to save the file. Use double backslashes or single forward slashes. 
 output_dir <- "C:\\Users\\OneDrive\\Desktop\\Demo\\"  
 
 # Define the full file path
 file_path <- file.path(output_dir, "shuffled_word_list.csv")
 
-# Save to a CSV file with "Tokens" as the column name
+# Save to a CSV file with “Tokens” as the column name
 write.csv(data.frame(Tokens = shuffled_words), file_path, row.names = FALSE)
-
 
 # End of code
