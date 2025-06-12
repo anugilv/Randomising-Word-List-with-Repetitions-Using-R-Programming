@@ -19,7 +19,7 @@ word_list <- rep(words, each = repetitions)
 shuffled_words <- sample(word_list, length(word_list))
 
 # Define the directory path where you want to save the file. Use double backslashes or single forward slashes. 
-output_dir <- "C:\\Users\\OneDrive\\Desktop\\Demo\\"  
+output_dir <- "Directory Path"  
 
 # Define the full file path
 file_path <- file.path(output_dir, "shuffled_word_list.csv")
